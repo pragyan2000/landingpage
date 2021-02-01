@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<title>Landing page</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href=# class="logo" ><img src="logo.png"></a>
+            <a href="#" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+<section>
+    <div class="circle"></div>
+    <div class="content">
+<div class="textBox">
+    <h2 class="header1">Its Not Just Coffee<br>It's <span class="ss">StarBucks</span></h2>
+    <p class="pp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>   
+<a class="aa" href=#>Learn More</a>
+</div>
+<div class="imgBox">
+<img src="img1.png" class="starbucks">
+    </div>
+</div>
+<ul class="thumb">
+    <li class="l"><img  class="i" src="thumb1.png" onClick="imgSlider('img1.png');changeCirCleColor('#017143')" ></li>
+    <li class="l"><img   class="i"src="thumb2.png" onClick="imgSlider('img2.png');changeCirCleColor('#eb7495')" ></li>
+    <li class="l"><img  class="i" src="thumb3.png" onClick="imgSlider('img3.png');changeCirCleColor('#d752b1')"></li>
+</ul>
+</section>
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector(".starbucks").src=anything;
+    }
+    function changeCirCleColor(color){
+     const circle=document.querySelector(".circle")
+    circle.style.background=color;
+    }
+</script>
+</body>
+
+</html>
